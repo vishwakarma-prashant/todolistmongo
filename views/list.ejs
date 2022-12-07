@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="heading-box">
+        <h1 class="heading">
+            <%=title%>
+        </h1>
+        <h1 class="date">
+            <%=todayDate%>
+
+        </h1>
+
+    </div>
+
+
+    <div class="main-box">
+        <div class="list-box">
+
+            <% newItems.forEach(function(user){ %>
+                <form action="/delete" method="post">
+
+                    <div id="li-box">
+                        <input type="checkbox" name="delCheckbox" value=<%=user.id%> onchange="this.form.submit()">
+
+                        <p class="list-item">
+                            <%-  user.name  %>
+                        </p>
+                        <!-- <button class="btn-rem" id="remove-btn">Remove</button> -->
+                    </div>
+
+                </form>
+
+                <% }); %>
+
+
+        </div>
+
+        <form action=<%=postAction%> method="post" class="form">
+
+            <input class="task-input" id="input-box" type="text" name="name" autocomplete="off">
+            <button class="button-input" type="submit" name="button" value=<%=title %> >Add</button>
+
+        </form>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

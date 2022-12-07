@@ -1,0 +1,19 @@
+
+
+<!--this is simple code for using EJS simple server code 
+in ejs comment ing code is not posible
+
+
+
+    <h1 style="color: <%=color%>">Today Date is
+    <%=toDate%>
+
+        </h1>
+        <h2>Day is
+            <%=dayIs%>
+
+        </h2>
+        <h2>Day is
+            <%=time%>
+
+        </h2>/--> 

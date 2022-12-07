@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(150deg, rgba(100, 166, 106, 0.637), rgba(210, 76, 166, 0.637), rgba(210, 96, 166, 0.637), rgba(210, 126, 166, 0.637), rgba(210, 146, 166, 0.637), rgba(20, 166, 76, 0.637), rgba(70, 16, 166, 0.637), rgba(255, 66, 166, 0.637), rgba(210, 66, 166, 0.637), rgba(20, 166, 166, 0.637), rgba(210, 16, 166, 0.637), rgba(210, 166, 16, 0.637), rgba(210, 166, 16, 0.637));
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+.heading-box {
+    width: 50%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.481);
+    box-shadow: 4px 4px 9px 4px rgb(85, 82, 82);
+}
+
+.heading {
+    text-align: center;
+}
+
+.date {
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.main-box {
+    width: 50%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.481);
+    box-shadow: 4px 4px 9px 4px rgb(85, 82, 82);
+}
+
+.button-box {
+    width: 50%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.481);
+    box-shadow: 4px 4px 9px 4px rgb(85, 82, 82);
+}
+
+.form {
+    display: flex;
+    padding: 5px;
+}
+
+.task-input {
+    padding: 1px;
+    width: 85%;
+    height: 20px;
+    margin: 1px;
+}
+
+.button-input {
+    padding: 1px;
+    margin: 1px;
+    width: 15%;
+    border: 0.2px solid black;
+    border: 2px;
+    font-weight: 900;
+    color: white;
+    background-color: rgb(174, 23, 174);
+    cursor: pointer;
+}
+
+.list-box {
+    width: 100%;
+    max-height: 40vh;
+    overflow-y: scroll;
+}
+
+.list-item {
+    width: 100%;
+    background-color: rgba(29, 72, 204, 0.748);
+    padding: 1px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 25px;
+    color: rgb(249, 249, 249);
+    border: none;
+    border-radius: 9px;
+    padding: 4px;
+    margin: 2px;
+}
+
+input:checked+p {
+    text-decoration: line-through;
+    text-decoration-color: black;
+}
+
+input[type="checkbox"] {
+    margin: 15px;
+}
+
+
+/* 
+.btn-rem {
+    padding: 1px;
+    margin: 1px;
+    width: 15%;
+    border: 0.2px solid black;
+    border: 2px;
+    font-weight: 900;
+    color: white;
+    background-color: rgb(174, 23, 174);
+    cursor: pointer;
+    border-radius: 5px;
+} */
+
+#li-box {
+    margin-top: 20px;
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    list-style: none;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+button:hover {
+    transform: scale(0.9);
+}
